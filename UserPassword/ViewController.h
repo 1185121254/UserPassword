@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FMDatabase.h"
 @interface ViewController : UIViewController
+{
+    FMDatabase *database;
+    
+}
 
+- (IBAction)logButton:(id)sender;
+
+- (IBAction)landButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *nameStr;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordStr;
 @end
